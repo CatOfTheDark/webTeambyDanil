@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Webteam </title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta charset="utf-8">
+</head>
+<body>
+
+<header>
+	<div class="container">
+		<div class="row navigation">
+			<a href="#" class="logo"> <img src="./img/ourlogo.png"> </a>
+	        <nav class="top-nav">
+	            <a href="#" class="menu-icon" onclick="showSideMenu()"></a>
+	            <a href="#about" class="nav-item"> О нас </a>
+	            <a href="#our_team" class="nav-item"> Наша команда </a>
+	            <a href="#our_works" class="nav-item"> Наши работы </a>
+	            <a href="#contacts" class="nav-item"> Контакты </a>
+	        </nav>
+	  	    <div id="side-menu" class="side-nav">
+		        <a href="#" class="close" onclick="hideSideMenu()">&times;</a>
+		        <a href="#about">О нас</a>
+		        <a href="#our_team">Наша команда</a>
+		        <a href="#our_works">Наши работы </a>
+		        <a href="#contacts">Контакты</a>
+        	</div>
+            <script>
+                function showSideMenu() {
+                    document.getElementById('side-menu').style.width = '250px';
+                }
+                function hideSideMenu() {
+                    document.getElementById('side-menu').style.width = '0';
+                }
+            </script>
+
+
+		</div>
+	</div>
+</header>
+
+<section id="slider">
+	<div class="slider">
+  	<div class="item">
+        <img src="img/photo1.jpg" alt="Первый слайд">
+        <div class="slideText">Web Team <br> Лучшая команда <br>дизайнеров и разработчиков.</div>
+    </div>
+
+    <div class="item">
+        <img src="img/photo2.jpg" alt="Второй слайд">
+        <div class="slideText">Гибкий график и доступные цены</div>
+    </div>
+
+    <div class="item">
+        <img src="img/photo3.jpg" alt="Третий слайд">
+        <div class="slideText">Проффесионализм и мастерство</div>
+    </div>
+
+  	<a class="prev" onclick="minusSlide()">&#10094;</a>
+  	<a class="next" onclick="plusSlide()">&#10095;</a>
+</div>
+<br>
+
+<div class="slider-dots">
+	<span class="slider-dots_item" onclick="currentSlide(1)"></span> 
+  	<span class="slider-dots_item" onclick="currentSlide(2)"></span> 
+  	<span class="slider-dots_item" onclick="currentSlide(3)"></span> 
+</div>
+	
+<script src="./js/slider-script.js"></script>
+</section>
+
+<section id="about">
+        <div class="container">
+            <div class="section-title">  <h2> О наc </h2></div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="./img/developer.jpg" class="about-img" alt="">
+                </div>
+                <div class="col-lg-6">
+
+                    <p class="about-description">
+                        Наша команда разработчиков занимается разработкой веб-сайтов любой сложности.
+                    </p>
+                    <p class="about-description">
+                        Наша формула проста: разработка сайтов быстро, недорого и эффективно, которые будут приносить прибыль и новых клиентов не только в Бишкек, но по всей стране.
+                         
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+<section id="our_team">
+  <div class="team-area">
+        <div class="container">
+            <div class="section-title text-black">
+                <h2>Наша команда</h2>
+            </div>
+            <div class="row">
+                   <div class="col-lg-3">
+                        <div class="team-item">
+                            <img src="./img/img2.jpg" alt="team image">
+                            <div class="tmember-info">
+                                <h4>Данил</h4>
+                                <span>Веб-разработчик</span>
+                                <p>Имеет большой опыт работы </p>
+                                <p>+996 55555555 </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="team-item">
+                            <img src="./img/img2.jpg" alt="team image">
+                            <div class="tmember-info">
+                                <h4>Кылыч</h4>
+                                <span>Веб-разработчик</span>
+                                <p>Имеет большой опыт работы </p>
+                                <p>+996 55555555 </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="team-item">
+                            <img src="./img/img2.jpg" alt="team image">
+                            <div class="tmember-info">
+                                <h4>Арлен</h4>
+                                <span>Веб-разработчик</span>
+                                <p>Имеет большой опыт работы </p>
+                                <p>+996 55555555 </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="team-item">
+                            <img src="./img/img2.jpg" alt="team image">
+                            <div class="tmember-info">
+                                <h4>Урмат</h4>
+                                <span>Веб-разработчик</span>
+                                <p>Имеет большой опыт работы </p>
+                                <p>+996 55555555 </p>
+
+                            </div>
+                        </div>
+                    </div>
+             </div>
+           <div class="row">
+                   <div class="col-lg-3">
+                        <div class="team-item">
+                            <img src="./img/img2.jpg" alt="team image">
+                            <div class="tmember-info">
+                                <h4>Эсен</h4>
+                                <span>Веб-разработчик</span>
+                                <p>Имеет большой опыт работы </p>
+                                <p>+996 55555555 </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="team-item">
+                            <img src="./img/img3.jpg" alt="team image">
+                            <div class="tmember-info">
+                                <h4>Яна</h4>
+                                <span>Веб-разработчик</span>
+                                <p>Имеет большой опыт работы </p>
+                                <p>+996 55555555 </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="team-item">
+                            <img src="./img/img2.jpg" alt="team image">
+                            <div class="tmember-info">
+                                <h4>Арлен</h4>
+                                <span>Веб-разработчик</span>
+                                <p>Имеет большой опыт работы </p>
+                                <p>+996 55555555 </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="team-item">
+                            <img src="./img/img3.jpg" alt="team image">
+                            <div class="tmember-info">
+                                <h4>Каныкей</h4>
+                                <span>Веб-разработчик</span>
+                                <p>Имеет большой опыт работы </p>
+                                <p>+996 55555555 </p>
+
+                            </div>
+                        </div>
+                    </div>
+             </div>
+        </div>
+    </div>
+
+</section>
+
+<br>
+
+<section id="services">
+        <div class="container">
+            <div class="section-title"> <h2>Наши <span> преимущества </span></h2></div>
+            <div class="row">
+
+                <div class="col-lg-4 services-box">
+                    <div class="services-icon-box"> 
+                        <i class="fas fa-coins"></i> 
+                    </div>
+                    <h4 class="services-title"> Доступные цены </h4>
+                    <p class="services-text"> 
+                        Мы не арендуем офис, работаем дистанционно. И Вам не нужно переплачивать лишние деньги за ненужные вам вещи. 
+                    </p>
+                </div>
+                <div class="col-lg-4 services-box">
+                    <div class="services-icon-box"> 
+                        <i class="fab fa-internet-explorer"></i> 
+                    </div>
+                    <h4 class="services-title"> Качественные веб-сайты </h4>
+                    <p class="services-text"> При разработке веб-сайтов учитываются функциональность и юзабилити </p>
+                </div>
+                <div class="col-lg-4 services-box">
+                    <div class="services-icon-box"> 
+                        <i class="fas fa-hourglass-half"></i>
+                    </div>
+                    <h4 class="services-title"> Короткие сроки </h4>
+                    <p class="services-text"> Мы не затягиваем создание на несколько месяцев, как крупные компании.   </p>
+                </div>
+
+ 
+
+
+<br>
+
+<section id="our_works">
+  <div class="works">
+    <div class="container">
+      <div class="section-title text-black">
+          <h2>Наши работы</h2>
+      </div>
+      <div class="row">
+                   <div class="col-lg-3">
+                        <div class="wrapper">
+  <div class="demo-content">
+    <figure class="img-box">
+      <img alt="sample54" src="./img/work1.jpg">
+      <figcaption><h3>Данная страница<span>@DanilKovtun</span></h3></figcaption>
+    </figure>
+    <figure class="img-box">
+      <img alt="sample73" src="./img/work2.jpg">
+      <figcaption><h3>Рекламная страница для тур агенства<span>@BudenkoYana</span></h3></figcaption>
+    </figure>
+    <figure class="img-box">
+      <img alt="sample58" src="./img/work3.jpg">
+      <figcaption><h3>Lanjding page для веб студии<span>@WebTeam</span></h3></figcaption>
+    </figure>
+    <figure class="img-box">
+      <img alt="sample58" src="./img/work3.jpg">
+      <figcaption><h3>Lanjding page для веб студии<span>@WebTeam</span></h3></figcaption>
+    </figure>
+  </div>
+</div>
+                    </div>
+
+
+      
+    </div>
+  </div>
+</section>
+<br>
+
+<section id="contacts">
+    <div class="container">
+        
+            <form>
+   <div class="row">
+    <div class="col-lg-6">
+      <div class="section-title"><h2> Оставьте свои <span> заявки </span></h2></div> 
+    </div>
+    <div class="col-lg-6 right">
+       <div class="form-group">
+         <input type="text" class="form-control form-control-lg" placeholder="Ваше ИМЯ" name="">
+       </div>
+       <div class="form-group">
+         <input type="email" class="form-control form-control-lg" placeholder="Email@email.com" name="email">
+       </div>
+       <div class="form-group">
+         <textarea class="form-control form-control-lg">
+          
+         </textarea>
+       </div>
+       <input type="submit" class="btn btn-secondary btn-block" value="Отправить" name="">
+    </div>
+   </div>
+  </form>
+    
+
+    </div>
+</section>     
+
+
+
+
+
+
+</body>
+</html>
